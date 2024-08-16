@@ -27,6 +27,7 @@ game.checkCollisions = function () {
 				clearInterval(game.player.fallInterval)
 				game.player.isInAir = false
 				game.player.y = Math.round(game.player.y / game.options.tileHeight) * game.options.tileHeight
+				game.player.isDoubleJump = true;
 				return true
 			}
 		}
